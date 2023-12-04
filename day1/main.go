@@ -112,6 +112,6 @@ func getCalibrationValueFromLine(r *regexp.Regexp, line string) int {
 		}
 	}
 	// normally you would check "power" for last number but in our case it will be always between 0-9 so final number
-	// will not be larger than 100 (and there are no zeros :hehe1:)
+	// will not be larger than 99
 	return numbers[0]*10 + numbers[len(numbers)-1]
 }
